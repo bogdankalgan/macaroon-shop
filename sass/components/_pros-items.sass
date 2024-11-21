@@ -8,5 +8,24 @@
         color: rgba(41, 41, 41, .8)
         background: none
         border: none
-    &-items
+        font-size: 1.2rem
+        transition: all .3s
+        &:focus
+            outline: none
+        &:hover
+            color: $color-white
+        &:active
+            color: rgba(41, 41, 41, .8)
+    &-item
         background: $color-blue
+        display: flex
+        align-items: start
+        transition: all .3s
+        width: 111.2rem
+        justify-content: center
+        img
+            margin-right: 1.2rem
+        &-text
+            @include text(300, 1.8rem)
+            letter-spacing: 2px
+            color: $color-black

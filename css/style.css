@@ -1,57 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
 html:root {
   font-size: 10px;
 }
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima_Nova_Thin.woff2") format(woff2);
+  src: url(../font/Proxima-Nova-Bold.woff) format(woff);
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima_Nova_Thin.woff") format(woff);
+  src: url(../font/Proxima-Nova-Bold.woff2) format(woff2);
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima Nova Semibold.woff2") format(woff2);
+  src: url(../font/Proxima-Nova-Regular.woff) format(woff);
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima Nova Semibold.woff") format(woff);
+  src: url(../font/Proxima-Nova-Regular.woff2) format(woff2);
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima Nova Regular.woff2") format(woff2);
+  src: url(../font/Proxima-Nova-Semibold.woff) format(woff);
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima Nova Regular.woff") format(woff);
+  src: url(../font/Proxima-Nova-Semibold.woff) format(woff);
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima Nova Alt Bold.woff2") format(woff2);
+  src: url(../font/Proxima-Nova-Semibold.woff2) format(woff2);
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima Nova Alt Bold.woff") format(woff);
+  src: url(../font/Proxima-Nova-Thin.woff) format(woff);
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/font/Proxima Nova Alt Black.woff2") format(woff2);
-}
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/Proxima Nova Alt Black.woff") format(woff);
+  src: url(../font/Proxima-Nova-Thin.woff2) format(woff2);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
 }
 
-p, li, a {
+p {
   font-family: "Proxima Nova";
 }
 
 body {
   background: #F7F7F7;
+}
+
+ul, li, ol {
+  padding: 0;
+  margin: 0;
 }
 
 .pros {
@@ -65,9 +70,181 @@ body {
   color: rgba(41, 41, 41, 0.8);
   background: none;
   border: none;
+  font-size: 1.2rem;
+  transition: all 0.3s;
 }
-.pros-items {
+.pros-button:focus {
+  outline: none;
+}
+.pros-button:hover {
+  color: #fff;
+}
+.pros-button:active {
+  color: rgba(41, 41, 41, 0.8);
+}
+.pros-item {
   background: #D4E9F9;
+  display: flex;
+  align-items: start;
+  transition: all 0.3s;
+  width: 111.2rem;
+  justify-content: center;
+}
+.pros-item img {
+  margin-right: 1.2rem;
+}
+.pros-item-text {
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #292929;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+  color: #141414;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F7EBE5;
+  padding: 1.2rem 13.5rem;
+}
+.header-top-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.header-top-list-item {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #292929;
+  transition: all 0.3s;
+  position: relative;
+}
+.header-top-list-item a {
+  color: rgba(42, 28, 28, 0.79);
+}
+.header-top-list-item a:has(+ .header-top-list-item-links)::after {
+  content: url(../icons/header-select-icon/chevron-down-solid.svg);
+  display: inline-block;
+  width: 1rem;
+  height: 0.1rem;
+  margin-left: 0.5rem;
+}
+.header-top-list-item a:is(#sales)::after {
+  content: "%";
+  display: inline-block;
+  background: #E7426A;
+  border-radius: 50%;
+  padding: 0.3rem 0.7rem;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+.header-top-list-item:not(:last-child) {
+  margin-right: 1.4rem;
+}
+.header-top-list-item-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 4rem;
+  background: #fff;
+  padding: 1.6rem 1.9rem 1.7rem 1.2rem;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+  width: 27.1rem;
+}
+.header-top-list-item-link::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  background: #EDEDF0;
+  height: 0.1rem;
+}
+.header-top-list-item-link:not(:last-child) {
+  margin-bottom: 4.5rem;
+}
+.header-top-right {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #292929;
+  transition: all 0.3s;
+}
+.header-top-right i {
+  margin-right: 0.5rem;
+}
+.header-select select {
+  border: none;
+  appearance: none;
+  background: url(../icons/header-select-icon/chevron-down-solid.svg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 1rem 1.3rem;
+  background-position-x: 8.5rem;
+  transition: all 0.3s;
+  font-weight: 300;
+}
+.header-select select:focus {
+  outline: none;
+}
+.header-select select:hover {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.header-select select:active {
+  font-size: 1.4rem;
+}
+.header-select i {
+  font-size: 1.7rem;
+}
+.header-phone:focus {
+  outline: none;
+}
+.header-phone:hover {
+  font-size: 1.5rem;
+}
+.header-phone:active {
+  font-size: 1.4rem;
+}
+.header-phone a {
+  color: #141414;
+}
+.header-social {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+.header-social a {
+  color: #141414;
+  font-size: 1.8rem;
+}
+.header-bottom {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #292929;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.9rem 22.9rem 1.6rem 16rem;
+}
+.header-bottom a {
+  color: #292929;
+  text-transform: uppercase;
+}
+.header-bottom a:focus {
+  text-decoration: none;
+}
+.header-bottom a:hover {
+  color: #D4E9F9;
+  text-decoration: none;
+}
+.header-bottom a:active {
+  color: #292929;
 }
 
 /*# sourceMappingURL=style.css.map */
