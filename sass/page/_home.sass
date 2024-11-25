@@ -1,0 +1,129 @@
+.hero
+    position: relative
+    padding: 3.9rem 11rem .6rem 18.6rem
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-img
+        img
+            z-index: 100000
+            position: relative
+            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, .15))
+            transition: all .3s
+            will-change: transform
+            &:not(:first-child)
+                position: absolute
+                animation: heroImages 2s infinite
+            &:nth-child(2)
+                top: 4.7rem
+                left: 33.3rem
+                animation: randomMove 6s infinite
+            &:nth-child(3)
+                top: 7.2rem
+                left: 60.5rem
+                animation: randomMove2 6s infinite
+            &:nth-child(4)
+                top: 19.4rem
+                left: 65.9rem
+                animation: randomMove3 6s infinite
+            &:nth-child(5)
+                top: 28.2rem
+                left: 60.6rem
+                animation: randomMove4 6s infinite
+            &:nth-child(6)
+                bottom: 5.3rem
+                left: 60.9rem
+                animation: randomMove5 6s infinite
+            &:nth-child(7)
+                bottom: 4.9rem
+                left: 56.5rem
+                animation: randomMove6 6s infinite
+            &:nth-child(8)
+                bottom: 2rem
+                left: 32rem
+                animation: randomMove7 6s infinite
+            &:nth-child(9)
+                bottom: .6rem
+                left: 21.1rem
+                animation: randomMove8 6s infinite
+            &:nth-child(10)
+                bottom: 4.3rem
+                left: 12.3rem
+                animation: randomMove9 6s infinite
+            &:nth-child(11)
+                bottom: 8.6rem
+                left: 15rem
+                animation: randomMove10 6s infinite
+            &:nth-child(12)
+                bottom: 13.2rem
+                left: 3.9rem
+                animation: randomMove11 6s infinite
+            &:nth-child(13)
+                top: 20.1rem
+                left: 13rem
+                animation: randomMove12 6s infinite
+            &:nth-child(14)
+                top: 6.4rem
+                left: 15.3rem
+                animation: randomMove13 6s infinite
+    span
+        position: absolute
+        border-radius: 50%
+        filter: blur(100px)
+    &-round
+        &-rose
+            background: $color-rose-round
+            width: 27.6rem
+            height: 27.6rem
+            top: 13.6rem
+            left: 14.8rem
+        &-blue
+            background: $color-blue-round
+            width: 26.8rem
+            height: 26.4rem
+            top: 3.9rem
+            left: 39.1rem
+        &-grey
+            background: $color-grey-round
+            width: 47.9rem
+            height: 47.9rem
+            top: 3.92rem
+            left: 42.8rem
+        &-green
+            background: $color-green-round
+            width: 23.1rem
+            height: 23.1rem
+            top: 6.5rem
+            right: 12.1rem
+        &-orange
+            background: $color-orange-round
+            width: 15rem
+            height: 15rem
+            bottom: .4rem
+            right: 12.1rem
+        &-yellow
+            background: $color-yellow-round
+            width: 26.4rem
+            height: 26.4rem
+            bottom: 3.9rem
+            right: .3rem
+    &-text
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-logo
+        position: relative
+        z-index: 1111
+        margin-bottom: 2.4rem
+        &-descr
+            display: flex
+            align-items: center
+            & > .line
+                width: 2.9rem
+                height: .15rem
+                background: $color-black
+                &:nth-child(1)
+                    margin-right: .7rem
+                &:nth-child(3)
+                    margin-left: .7rem
