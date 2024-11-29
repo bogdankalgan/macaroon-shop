@@ -1,0 +1,26 @@
+.actions-item
+    background: $actions-blue
+    display: inline-block
+    position: relative
+    transform: translateX(0%)
+    &:not(:last-child)
+        margin-right: 2.7rem
+    &__red
+        background: $actions-red
+        & > .actions-item-modal
+            background: $actions-red
+    &-bottom
+        padding: 2rem
+        text-align: center
+        @include text(600, 1.6rem)
+        color: $color-white
+        font-family: "Montserrat"
+    &-modal
+        clip-path: polygon(100% 1%, 95% 51%, 100% 100%, 0 100%, 0 0)
+        text-transform: uppercase
+        padding: .45rem 1rem
+        color: $color-white
+        background: $actions-blue
+        position: absolute
+        left: 0
+        top: 1.5rem

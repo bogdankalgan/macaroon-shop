@@ -134,4 +134,58 @@
     flex-wrap: wrap
     padding: 0 13.5rem
     margin-bottom: 9.4rem
-    
+
+.actions
+    padding: 0 13.5rem
+    position: relative
+    margin-bottom: 9.3rem
+    &-items
+        display: flex
+        flex-wrap: nowrap
+        overflow-x: auto
+        margin-bottom: 3.7rem
+        &::-webkit-scrollbar
+            display: none
+    &-slider
+        display: flex
+        align-items: center
+        justify-content: end
+        flex: 0 0 calc( 100% / 4)
+        &-item
+            background: $color-white
+            border: 1px solid $border-actions-slider
+            width: 1.2rem
+            height: 1.2rem
+            transition: all .3s
+            &__active
+                background: $color-rose
+                border-color: $color-rose
+            &:not(:last-child)
+                margin-right: 1rem
+            &:focus
+                outline: none
+            &:hover
+                background: $color-rose
+                border-color: $color-rose
+            &:active
+                background: $color-white
+                border-color: $border-actions-slider
+
+.big
+    padding: 0 18.3rem 0 13.5rem
+    margin-bottom: 19.7rem
+    position: relative
+    &  .title-secondary
+        margin-bottom: 7.8rem
+    &-line
+        width: 100%
+        height: 0
+        border: 1px dashed $big-line
+    &-items
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+.popular
+    & .title-secondary
+        margin-bottom: 4.2rem

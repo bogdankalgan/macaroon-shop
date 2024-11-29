@@ -1,0 +1,29 @@
+.big-item
+    text-align: center
+    @include text(600, 1.4rem)
+    display: inline-block
+    position: absolute
+    &:nth-child(1)
+        top: 4.7rem
+        left: 10.5rem
+        animation: scaleItems 3s 1
+    &:nth-child(2)
+        top: 7.8rem
+        left: 33.5rem
+        animation: scaleItems 3s 3s 1
+    &:nth-child(3)
+        top: 8.3rem
+        left: 53.5rem
+        animation: scaleItems 3s 6s 1
+    &:nth-child(4)
+        top: 8.5rem
+        left: 73.5rem
+        animation: scaleItems 3s 9s 1
+    &:nth-child(5)
+        top: 8.3rem
+        right: 33.5rem
+        animation: scaleItems 3s 12s 1
+    &:nth-child(6)
+        top: 8.3rem
+        right: 13.5rem
+        animation: scaleItems 3s 15s 1
