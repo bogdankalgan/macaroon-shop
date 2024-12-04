@@ -1,0 +1,28 @@
+.login
+    &-page
+        padding: 2rem 13.5rem 0 13.5rem
+        & .title-first
+            margin-bottom: 2rem
+        label
+            @include text(500, 2rem)
+            font-family: "Montserrat"
+            margin-bottom: 2rem
+        input
+            background: $color-black
+            border: none
+            color: $color-white
+            &:focus
+                outline: none
+        button
+            background: $color-black
+            @include text(500, 1.5rem)
+            color: $color-white
+            font-family: "Montserrat"
+            border: 1px solid $color-white
+            padding: 1rem
+            &:focus
+                outline: none
+            &:hover
+                color: $color-blue
+            &:active
+                color: $color-white
