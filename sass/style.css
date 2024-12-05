@@ -645,8 +645,6 @@ ul, li, ol, p {
 .popular-item {
   background: #fff;
   border: 1px solid #EDEDF0;
-  color: #292929;
-  width: 37rem;
 }
 .popular-item-text {
   padding: 2.1rem 2.2rem 1rem 2.1rem;
@@ -1077,7 +1075,6 @@ ul, li, ol, p {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3rem;
 }
 
 .login-page {
@@ -1121,58 +1118,6 @@ ul, li, ol, p {
 }
 .login-page button:active {
   color: #fff;
-}
-
-.admin-body {
-  padding: 2rem 13.5rem 0 13.5rem;
-}
-.admin-hello {
-  display: flex;
-  align-items: center;
-}
-.admin-hello-logout {
-  background: #141414;
-  border: none;
-  color: #fff;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-  margin-left: 1rem;
-}
-.admin-popular-form {
-  display: flex;
-  flex-direction: column;
-}
-.admin-popular-form input, .admin-popular-form textarea {
-  margin-bottom: 2rem;
-  background: #141414;
-  color: #fff;
-  padding: 1rem 0 1rem 1rem;
-  border: none;
-}
-.admin-popular-form input:focus, .admin-popular-form textarea:focus {
-  outline: none;
-}
-.admin-popular-form input::placeholder, .admin-popular-form textarea::placeholder {
-  color: #fff;
-}
-.admin-popular-form button[type=submit] {
-  background: #141414;
-  color: #fff;
-  border: none;
-  padding: 2rem 0;
-}
-.admin-popular-form button[type=submit]:hover {
-  color: #D4E9F9;
-}
-.admin-popular-form button[type=submit]:active {
-  color: #fff;
-}
-
-.delete-button {
-  background: #141414;
-  color: #fff;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

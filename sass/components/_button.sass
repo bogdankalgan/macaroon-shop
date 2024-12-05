@@ -1,0 +1,25 @@
+.intrash-button
+    background: none
+    border: none
+    @include text(600, 1.4rem)
+    font-family: "Montserrat"
+    transition: all .3s
+    &:focus
+        outline: none
+    &:hover
+        color: $color-rose
+    &:active
+        color: $color-text
+    i
+        margin-right: 1.1rem
+    &-container
+        position: relative
+        &::before
+            content: " "
+            display: inline-block
+            height: 230%
+            width: 1px
+            background: $color-white-light
+            position: absolute
+            top: -1.6rem
+            left: -2.3rem

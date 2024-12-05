@@ -1,0 +1,42 @@
+.admin
+    &-body
+        padding: 2rem 13.5rem 0 13.5rem
+    &-hello
+        display: flex
+        align-items: center
+        &-logout
+            background: $color-black
+            border: none
+            color: $color-white
+            border-radius: 1rem
+            padding: 1rem 2rem
+            margin-left: 1rem
+    &-popular
+        &-form
+            display: flex
+            flex-direction: column
+            input, textarea
+                margin-bottom: 2rem
+                background: $color-black
+                color: $color-white
+                padding: 1rem 0 1rem 1rem
+                border: none
+                &:focus
+                    outline: none
+                &::placeholder
+                    color: $color-white
+            button[type='submit']
+                background: $color-black
+                color: $color-white
+                border: none
+                padding: 2rem 0
+                &:hover
+                    color: $color-blue
+                &:active
+                    color: $color-white
+
+.delete-button
+    background: $color-black
+    color: $color-white
+    border-radius: 1rem
+    padding: 1rem 2rem
