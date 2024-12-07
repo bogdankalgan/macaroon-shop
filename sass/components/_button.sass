@@ -23,3 +23,22 @@
             position: absolute
             top: -1.6rem
             left: -2.3rem
+
+.blue-border-button
+    background: none
+    border: 1px solid $blue-border
+    padding: 1.7rem 4.9rem
+    @include text(600, 1.4rem)
+    font-family: "Montserrat"
+    text-decoration: none
+    &:focus
+        outline: none
+        text-decoration: none
+    &:hover
+        color: $blue-border
+        text-decoration: none
+    &:active
+        color: $color-text
+        text-decoration: none
+    &-container
+        text-align: center

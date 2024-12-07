@@ -426,6 +426,33 @@ ul, li, ol, p {
   left: -2.3rem;
 }
 
+.blue-border-button {
+  background: none;
+  border: 1px solid #4E9DD3;
+  padding: 1.7rem 4.9rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #292929;
+  transition: all 0.3s;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+.blue-border-button:focus {
+  outline: none;
+  text-decoration: none;
+}
+.blue-border-button:hover {
+  color: #4E9DD3;
+  text-decoration: none;
+}
+.blue-border-button:active {
+  color: #292929;
+  text-decoration: none;
+}
+.blue-border-button-container {
+  text-align: center;
+}
+
 .pros {
   display: flex;
   align-items: center;
@@ -647,6 +674,12 @@ ul, li, ol, p {
   border: 1px solid #EDEDF0;
   color: #292929;
   width: 37rem;
+  text-decoration: none;
+  color: #292929;
+}
+.popular-item:hover {
+  text-decoration: none;
+  color: #292929;
 }
 .popular-item-text {
   padding: 2.1rem 2.2rem 1rem 2.1rem;
@@ -674,6 +707,44 @@ ul, li, ol, p {
   position: absolute;
   left: -2rem;
   top: 0;
+}
+
+.news-item {
+  background: #fff;
+  border: 1px solid #fff;
+  width: 37rem;
+  color: #292929;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.news-item:focus {
+  text-decoration: none;
+}
+.news-item:hover {
+  color: #D4E9F9;
+  text-decoration: none;
+}
+.news-item:active {
+  color: #292929;
+  text-decoration: none;
+}
+.news-item-text {
+  padding: 2rem 2rem 8rem 2rem;
+}
+.news-item-date {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #292929;
+  transition: all 0.3s;
+  font-family: "Montserrat";
+  color: #969696;
+  margin-bottom: 1rem;
+}
+.news-item .descr__18 {
+  margin-bottom: 1rem;
+}
+.news-item .descr__14 {
+  opacity: 0.8;
 }
 
 .header-top {
@@ -1069,6 +1140,9 @@ ul, li, ol, p {
   justify-content: space-between;
 }
 
+.popular {
+  margin-bottom: 8.5rem;
+}
 .popular .title-secondary {
   margin-bottom: 4.2rem;
 }
@@ -1078,6 +1152,15 @@ ul, li, ol, p {
   align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.news .title-secondary {
+  margin-bottom: 4rem;
+}
+.news-items {
+  padding: 0 13.5rem;
+  display: flex;
 }
 
 .login-page {

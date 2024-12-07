@@ -1,0 +1,26 @@
+.news-item
+    background: $color-white
+    border: 1px solid $color-white
+    width: 37rem
+    color: $color-text
+    text-decoration: none
+    transition: all .3s
+    &:focus
+        text-decoration: none
+    &:hover
+        color: $color-blue
+        text-decoration: none
+    &:active
+        color: $color-text
+        text-decoration: none
+    &-text
+        padding: 2rem 2rem 8rem 2rem
+    &-date
+        @include text(400, 1.4rem)
+        font-family: "Montserrat"
+        color: $news-date
+        margin-bottom: 1rem
+    & .descr__18
+        margin-bottom: 1rem
+    & .descr__14
+        opacity: .8
