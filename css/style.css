@@ -846,7 +846,7 @@ ul, li, ol, p {
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 1rem 1.3rem;
-  background-position-x: 8.5rem;
+  background-position-x: 6.5rem;
   transition: all 0.3s;
   font-weight: 300;
 }
@@ -1155,12 +1155,52 @@ ul, li, ol, p {
   margin-bottom: 3.5rem;
 }
 
+.news {
+  padding: 0 13.5rem;
+}
 .news .title-secondary {
   margin-bottom: 4rem;
 }
 .news-items {
-  padding: 0 13.5rem;
   display: flex;
+  gap: 2.9rem;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+.news-items::-webkit-scrollbar {
+  display: none;
+}
+.news-slider {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 0 0 25%;
+  margin-bottom: 0.3rem;
+}
+.news-slider-item {
+  background: #fff;
+  border: 1px solid #E5E5E5;
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: all 0.3s;
+}
+.news-slider-item__active {
+  background: #E7426A;
+  border-color: #E7426A;
+}
+.news-slider-item:not(:last-child) {
+  margin-right: 1rem;
+}
+.news-slider-item:focus {
+  outline: none;
+}
+.news-slider-item:hover {
+  background: #E7426A;
+  border-color: #E7426A;
+}
+.news-slider-item:active {
+  background: #fff;
+  border-color: #E5E5E5;
 }
 
 .login-page {
